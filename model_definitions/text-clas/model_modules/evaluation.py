@@ -14,8 +14,8 @@ def evaluate(context: ModelContext, **kwargs):
 
     aoa_create_context()
 
-    model = DataFrame(in_schema("DW_LANDING", "modelo_texto"))
-    stopwords = DataFrame(in_schema("DW_LANDING","stopwords"))
+    model = DataFrame(in_schema("lc250058", "modelo_texto"))
+    stopwords = DataFrame(in_schema("lc250058","stopwords"))
     test_df = DataFrame.from_query(context.dataset_info.sql)
 
     print("Starting data cleaning...")

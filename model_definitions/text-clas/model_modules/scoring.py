@@ -10,8 +10,8 @@ def score(context: ModelContext, **kwargs):
 
     aoa_create_context()
 
-    model = DataFrame(in_schema("DW_LANDING", "modelo_texto"))
-    stopwords = DataFrame(in_schema("DW_LANDING", "stopwords"))
+    model = DataFrame(in_schema("lc250058", "modelo_texto"))
+    stopwords = DataFrame(in_schema("lc250058", "stopwords"))
 
     feature_names = context.dataset_info.feature_names
     target_name = context.dataset_info.target_names[0]

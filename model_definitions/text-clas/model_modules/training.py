@@ -11,7 +11,7 @@ def train(context: ModelContext, **kwargs):
     # read training dataset from Teradata and convert to pandas
 
     train_df = DataFrame.from_query(context.dataset_info.sql)
-    stopwords = DataFrame(in_schema("DW_LANDING", "stopwords"))
+    stopwords = DataFrame(in_schema("lc250058", "stopwords"))
     
     print("Starting data cleaning...")
 
