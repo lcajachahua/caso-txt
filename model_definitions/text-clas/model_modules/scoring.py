@@ -26,7 +26,7 @@ def score(context: ModelContext, **kwargs):
                                 punctuation="\<>!#$%&[]()*+,-./:;?@^_`{|}~''",
                                 object=stopwords,
                                 remove_stopwords=True,
-                                accumulate=["doc_id", "target"])
+                                accumulate=["doc_id"])
 
     print("Scoring")
 
@@ -38,7 +38,6 @@ def score(context: ModelContext, **kwargs):
                                                       model_token_column='token',
                                                       model_category_column='category',
                                                       model_prob_column = 'prob',
-                                                      accumulate='target',
                                                       responses=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
                                                                  'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S'],
                                                       newdata_partition_column='doc_id')
