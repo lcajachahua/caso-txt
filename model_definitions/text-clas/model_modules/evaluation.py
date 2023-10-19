@@ -36,6 +36,7 @@ def evaluate(context: ModelContext, **kwargs):
                                                       model_type="MULTINOMIAL",
                                                       model_token_column='token',
                                                       model_category_column='category',
+                                                      model_prob_column = 'prob',
                                                       accumulate='target',
                                                       responses=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
                                                                  'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S'],
