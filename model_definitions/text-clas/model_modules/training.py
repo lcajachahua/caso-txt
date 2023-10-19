@@ -35,7 +35,7 @@ def train(context: ModelContext, **kwargs):
     print("Finished training")
 
     # export model artefacts
-    copy_to_sql(NaiveBayesTextClassifierTrainer_out.result, schema_name="DW_LANDING",
+    copy_to_sql(NaiveBayesTextClassifierTrainer_out.result, schema_name="lc250058",
                 table_name="modelo_texto", if_exists="replace")
 
     print("Saved trained model")
